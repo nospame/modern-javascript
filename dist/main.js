@@ -15,7 +15,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var Chance = __webpack_require__(/*! chance */ \"./node_modules/chance/chance.js\");\n\nconsole.log(\"hello from javascript\");\nconsole.log(\n  chance.natural({ min: 1, max: 52 })\n);\n\n\n//# sourceURL=webpack://modern-javascript/./index.js?");
+eval("function _readOnlyError(name) { throw new TypeError(\"\\\"\" + name + \"\\\" is read-only\"); }\n\nvar Chance = __webpack_require__(/*! chance */ \"./node_modules/chance/chance.js\");\n\nconsole.log(\"hello from javascript\");\nvar rand = chance.natural({\n  min: 1,\n  max: 52\n});\nconsole.log(\"The random number is \".concat(rand, \".\"));\n\nfunction f() {\n  {\n    var x;\n    {\n      // this is ok since it's a block scoped name\n      var _x = \"sneaky\"; // error, was just defined with `const` above\n\n      \"foo\", _readOnlyError(\"x\");\n    } // this is ok since it was declared with `let`\n\n    x = \"bar\";\n  }\n}\n\nconsole.log(f());\n\n//# sourceURL=webpack://modern-javascript/./index.js?");
 
 /***/ }),
 
