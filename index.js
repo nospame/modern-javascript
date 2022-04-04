@@ -1,5 +1,4 @@
-/* global Chart */
-/* global chance */
+var Chance = require('chance');
 
 console.log("hello from javascript");
 console.log(

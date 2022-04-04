@@ -19,5 +19,9 @@
   "dependencies": {
     "chance": "^1.1.8",
     "chart.js": "^3.7.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
   }
 }
